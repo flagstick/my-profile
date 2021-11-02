@@ -1,0 +1,104 @@
+.container {
+	margin: 10px 100px 100px 100px;
+	font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+.Focus_Card {
+	background-color: rgb(254, 245, 237);
+	border-style: solid;
+	margin: 30px 0px;
+	padding: 30px;
+	border-radius: 1%;
+	animation-name: slidein;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+    transition: background-color 2s, transform 2s, box-shadow 1.5s;
+    box-shadow: 15px 7px 0 rgba(0, 0, 0,0.1);
+}
+@keyframes slidein {
+	from {
+		margin-top: 100%;
+		width:  100%;
+	}
+
+	to {
+		margin-top: 0%;
+		width: 100%;
+	}
+}
+.Focus_Card:hover {
+	transform: scale(1.01);
+	box-shadow: 17px 9px 10px rgba(0, 0, 0, 0.5);
+}
+h1 {
+	font-family: 'Zen Kaku Gothic New', sans-serif;
+	color: rgb(153, 167, 153);
+	font-size: 50px;
+	font-weight: 500;
+	transition: transform 1s;
+}
+h1:hover {
+	transform: scale(1.01);
+}
+h2 {
+	color: rgb(153, 167, 153);
+	font-size: 30px;
+	font-weight: 400;
+	transition: transform 1s;
+}
+h2:hover {
+	transform: scale(1.01);
+}
+body {
+	font-family: 'Zen Kaku Gothic New', sans-serif;
+	font-size: 15px;
+	line-height: 2;
+	text-align: center;
+	font-weight: 300;
+	height: 0px;
+	width: 900px;
+	margin: 0 auto;
+	transition: transform 1s;
+}
+body:hover {
+	transform: scale(1.01);
+}
+img {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	transition: transform 1s;
+}
+img:hover {
+	transform: scale(1.01);
+}
+ul li{
+	font-family: 'Zen Kaku Gothic New', sans-serif;
+	list-style: none;
+}
+ul {
+	padding: 0;
+}
+button {
+	background-color: rgb(211, 228, 205);
+	border-color: rgb(211, 228, 205);
+	border-style: solid;
+	padding: 10px 10px 10px;
+	border-radius: 20%;
+	margin: 5px;
+	transition: background-color 0.75s, transform 0.75s;
+}
+button:hover {
+	transform: scale(1.015);
+	background-color: rgb(254, 245, 237);
+	border-color: rgba(211, 228, 205, 1.0);
+}
+@media (max-width: 800px) {
+	.Focus_Card {
+		width:  550px;
+	}
+}
+@media (max-width: 720px) {
+	.Focus_Card {
+		width:  480px;
+	}
+}
